@@ -3,12 +3,6 @@ import { Row, RowBetween } from "components/Displays/Row";
 import { Text } from "components/Utils/Text";
 import styled from "styled-components";
 import Image from "next/image";
-import City from "/public/static/images/cityHeader.svg";
-import Decorator1 from "/public/static/images/background/backgroundDecorator.svg";
-import Decorator2 from "/public/static/images/background/decorator2.svg";
-import Decorator3 from "/public/static/images/background/decorator3.svg";
-import Decorator4 from "/public/static/images/background/decorator4.svg";
-import Building from "/public/static/images/background/building.svg";
 import { BaseButton } from "components/Buttons";
 import Colabs from "components/homeComponents/Colabs";
 import Info from "components/homeComponents/Cards";
@@ -92,8 +86,10 @@ export default function MyAccount() {
       <Header>
         <ImageBackground>
           <Image
-            src={Decorator1}
+            src="/static/images/background/backgroundDecorator.svg"
             alt="icon"
+            width={0}
+            height={0}
             style={{
               width: "140%",
               height: "125vh",
@@ -146,12 +142,18 @@ export default function MyAccount() {
                 onMouseOut={handleMouseOut}
                 gap="5px"
               >
-                <Play fill={isHovering?'white':'#273039'}></Play>
+                <Play fill={isHovering ? "white" : "#273039"}></Play>
                 <strong>How it works</strong>
               </BaseButton>
             </Row>
           </HeaderInfo>
-          <Image unoptimized={true} src={City} alt="city" />
+          <Image
+            unoptimized={true}
+            src="/static/images/cityHeader.svg"
+            alt="city"
+            width={550}
+            height={500}
+          />
         </TopHeader>
         <Colabs />
       </Header>
@@ -160,17 +162,21 @@ export default function MyAccount() {
       <InfoCards />
       <Explore>
         <Image
-          src={Decorator2}
+          src="/static/images/background/decorator2.svg"
           alt="icon"
           style={{
             position: "absolute",
             opacity: "1",
             bottom: "7.5%",
           }}
+          width={0}
+          height={0}
         />
         <Image
-          src={Decorator3}
+          src="/static/images/background/decorator3.svg"
           alt="icon"
+          width={0}
+          height={0}
           style={{
             position: "absolute",
             opacity: "1",
@@ -178,8 +184,10 @@ export default function MyAccount() {
           }}
         />
         <Image
-          src={Decorator4}
+          src="/static/images/background/decorator4.svg"
           alt="icon"
+          width={0}
+          height={0}
           style={{
             position: "absolute",
             opacity: "1",
@@ -188,8 +196,10 @@ export default function MyAccount() {
         />
 
         <Image
-          src={Building}
+          src="/static/images/background/building.svg"
           alt="icon"
+          width={0}
+          height={0}
           style={{
             position: "absolute",
             opacity: "1",

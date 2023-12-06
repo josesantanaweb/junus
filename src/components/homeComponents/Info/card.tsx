@@ -40,6 +40,8 @@ export default function Card({
           unoptimized={true}
           src={src}
           alt="image"
+          width={0}
+          height={0}
           style={{ position: "absolute", top: "-160px", left: "110px" }}
         />
       </ImageWrapper>

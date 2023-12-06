@@ -2,14 +2,6 @@ import { AutoColumn } from "components/Displays/Column";
 import { Row } from "components/Displays/Row";
 import { Text } from "components/Utils/Text";
 import styled from "styled-components";
-import Coins from "/public/static/images/infoIcons/coins.svg";
-import Credit from "/public/static/images/infoIcons/creditCard.svg";
-import Fire from "/public/static/images/infoIcons/fire.svg";
-import Gift from "/public/static/images/infoIcons/gift.svg";
-import House from "/public/static/images/infoIcons/houseHand.svg";
-import Interface from "/public/static/images/infoIcons/interface.svg";
-import Reward from "/public/static/images/infoIcons/reward.svg";
-import World from "/public/static/images/infoIcons/world.svg";
 import Card from "./card";
 
 const Wrapper = styled(AutoColumn)`
@@ -41,15 +33,17 @@ export default function InfoCards() {
       </AutoColumn>
       <CardDisplay justify="center" gap="30px">
         <Card
-          src={World}
+          src="/static/images/infoIcons/world.svg"
           title={"Tokenization of"}
+          width={0}
+          height={0}
           caption={"Real World Assets"}
           text={
             "Redefined ownership, users benefit from unprecedented flexibility and accessibility thanks to fractional stakes in real estate and bonds."
           }
         />
         <Card
-          src={House}
+          src="/static/images/infoIcons/houseHand.svg"
           title={"Disruptive"}
           caption={"Real Estate"}
           text={
@@ -57,7 +51,7 @@ export default function InfoCards() {
           }
         />
         <Card
-          src={Gift}
+          src="/static/images/infoIcons/gift.svg"
           title={"On-chain"}
           caption={"U.S. Bonds"}
           text={
@@ -65,7 +59,7 @@ export default function InfoCards() {
           }
         />
         <Card
-          src={Credit}
+          src="/static/images/infoIcons/creditCard.svg"
           title={"- Money Services Businesses"}
           caption={"Private Credit"}
           captionFirst={true}
@@ -74,7 +68,7 @@ export default function InfoCards() {
           }
         />
         <Card
-          src={Interface}
+          src="/static/images/infoIcons/interface.svg"
           title={"Transparency and"}
           caption={"User-Friendly Interface"}
           text={
@@ -82,7 +76,7 @@ export default function InfoCards() {
           }
         />
         <Card
-          src={Reward}
+          src="/static/images/infoIcons/reward.svg"
           title={"Staking for"}
           caption={"Enhanced Rewards"}
           text={
@@ -90,7 +84,7 @@ export default function InfoCards() {
           }
         />
         <Card
-          src={Coins}
+          src="/static/images/infoIcons/coins.svg"
           title={"Regulatory-Compliant"}
           caption={"Investments"}
           text={
@@ -98,7 +92,7 @@ export default function InfoCards() {
           }
         />
         <Card
-          src={Fire}
+          src="/static/images/infoIcons/fire.svg"
           title={"Macrotrend"}
           caption={"ETFs"}
           text={
